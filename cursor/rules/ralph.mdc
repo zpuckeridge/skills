@@ -38,7 +38,7 @@ Implement the feature or fix described in the issue. Work only on that task.
 
 ### 4. Validate
 
-- Run `bun run ship --check` (typecheck, lint, format — same as pre-commit)
+- Run `bun run ship --check` (typecheck, lint, format — same as pre-commit) 
 - Fix any failures before proceeding. If validation fails, fix the code and re-run — do not stop and ask the user.
 
 ### 5. Open Pull Request (do not commit directly to main)
