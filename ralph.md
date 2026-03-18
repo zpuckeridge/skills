@@ -72,14 +72,3 @@ The `Fixes #<number>` in the PR body will auto-close the issue when the PR is me
 ### Triggers
 
 Phrases that activate this mode: "run RALPH", "RALPH loop", "RALPH for N iterations", "RALPH until done", "continue RALPH", "continue", "next task", "automate GitHub issues".
-
-### AFK mode (headless)
-
-To run RALPH from the terminal while away (e.g. via SSH from mobile):
-
-1. Install Cursor CLI: `curl https://cursor.com/install -fsS | bash`
-2. Set `CURSOR_API_KEY` or run `agent login`
-3. Ensure `gh` is installed and authenticated
-4. Run: `bun run ralph:afk` or `./scripts/ralph-afk.sh [max-calls]`
-
-The script streams output in real time and retries if the agent stops early. Output `<promise>COMPLETE</promise>` when all tasks are done.
