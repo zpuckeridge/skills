@@ -1,5 +1,7 @@
 ---
-description: RALPH loop - fetch GitHub issues, implement, validate, open PR, repeat
+name: ralph
+description: >-
+  RALPH loop: fetch GitHub issues, implement, validate, open PR, repeat
 ---
 
 ## RALPH Loop (GitHub Issue Automation)
