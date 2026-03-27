@@ -24,6 +24,18 @@ The skill is **instructions for the agent**, not a shell script—commands run i
 
 ---
 
+## Review (`skills/review/SKILL.md`)
+
+**Review** tells the agent to act as a **senior reviewer** on a pasted or attached **git diff** (or branch/commit range): short summary, then findings ordered by **severity** with a fixed rubric (Critical → Low). It does **not** rewrite code unless you ask for patches or edits.
+
+| | |
+| --- | --- |
+| **What it does** | Summarises intent and scope; checks correctness, regressions, security (auth, exposure, injection, secrets), races, error handling, and test gaps for new behaviour. Large diffs: prioritise risky hunks and state what was not fully reviewed. |
+| **How to run** | Paste a diff, point at a branch/range, or ask for a PR / pre-merge / second-opinion review. |
+| **You need** | A diff or ref the agent can read; optional context if the change is not self-explanatory. |
+
+---
+
 ## RALPH (`skills/ralph/SKILL.md`)
 
 **RALPH** is a skill that automates a **GitHub issue → implement → validate → PR → repeat** loop (issues labelled `agent`, `gh` for listing/editing/PRs).
