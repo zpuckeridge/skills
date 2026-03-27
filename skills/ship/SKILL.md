@@ -1,10 +1,9 @@
 ---
 name: ship
 description: >-
-  Ship or verify: code-review changed files and apply safe fixes, then run
-  checks (Turbo monorepo vs single package), stage, semantic commit, and push.
-  Use when the user says ship or verify (not generic deploy/push). Commit is
-  the last deploy step; build runs remotely.
+  Ship or verify: review, safe fixes, Turbo checks, semantic commit + push
+  (verify stops before commit). Only when the user explicitly says ship or
+  verify—not casual deploy/push.
 ---
 
 # Ship & verify
